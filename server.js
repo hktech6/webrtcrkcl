@@ -21,7 +21,7 @@ app.set('view engine', 'html');
 app.use(cookieParser());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-require('./app/server/routes')(app);
+require('./app/server/routes')(app);   
 
 server.listen(3001);
 // WARNING: app.listen(80) will NOT work here!
